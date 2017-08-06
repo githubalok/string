@@ -2,12 +2,6 @@
 
 using namespace std;
 
-void reverse(string &s, int i, int j) {
-	while(i <= j) {
-		swap(s[i++], s[j--]);
-	}
-}
-
 string minPalin(string s) {
 	int j = 0;
 	
@@ -32,8 +26,8 @@ string minPalin(string s) {
 }
 
 int main() {
-	freopen("in.txt","r",stdin);
-  freopen("out.txt","w",stdout);
+  //freopen("in.txt","r",stdin);
+  //freopen("out.txt","w",stdout);
   string s;
   cin >> s;
   cout << minPalin(s);
